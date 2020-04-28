@@ -1,0 +1,77 @@
+html {
+    font-size: 10px;
+    background-image: url(../../img/2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {  
+    margin: 0;
+    @include font-and-color($size: 3.6rem);
+    max-width: 1920px;
+    font-family: 'Poppins', 'Verdana', sans-serif;
+}
+
+h1 {
+    @include font-and-color($size: 7.2rem, $weight: normal, $color: $color-prim);
+}
+
+li {
+    font-size: 3.0rem;
+    color: $color-prim;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    &:visited {
+        color: $color-prim;
+    }
+}
+
+input {
+    transition: all 0.7s;
+    &:hover {
+        box-shadow: 0 0 25px $color-prim;
+    }
+}
+
+input[type='text'] {
+    @include font-and-color($size: 3.6rem, $color: $color-prim);
+    text-align: center;
+    white-space: pre-line;
+}
+
+input[type='date'] {
+    @include font-and-color($size: 3.6rem, $color: $color-prim);
+    text-align: center;
+    &::-webkit-inner-spin-button {
+        display: none;
+    }
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    border: 4px solid transparent;
+    
+}
+
+td, th {
+    @include font-and-color($size: 2.4rem, $weight: normal, $color: $color-add);
+    border: 3px solid #aecad6;
+    padding: 6px;
+}
+
+#bg {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 1920px;
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <title>VACCINIUM</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper header__wrapper">
+            <div class="header__logo-line">
+                <a href="index.html" class="logo"><img src="img/logotrue.png" alt="" width="481px" height="89px"></a>
+            </div>
+            <nav class="header__navigation">
+                <ul class="navigation">
+                    <li><a href="index.html">О проекте</a></li>
+                    <li><a href="Team/team.html">Команда проекта</a></li>
+                    <li><a href="HelpProject/helpProject.html">Помочь проекту</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="vaccination-calendar">
+            <div class="wrapper vaccination-calendar__wrapper">
+                <p class="vaccination-calendar__description">Узнайте о всех прививках, которые Вы должны были уже сделать и которые только предстоит выполнить</p>
+                <div class="vaccination-calendar__form">
+                    <input id="date" placeholder="Введите дату рождения" type="text" onfocus="replaceTextDate()" onblur="replaceDateText()"/>
+                    <button class="vaccination-calendar__button" onclick="check()">Узнать</button>
+                </div>
+            </div>
+        </section>
+        <section class="table">
+            <div class="wrapper">
+                <table>
+                    <caption>Для сортировки нажмите на шапку колонки, по которой хотите отсортировать</caption>
+                    <tr>
+                        <th><div onclick="sortByDate()" style="cursor: pointer;">Дата вакцинации</div></th>
+                        <th>Ваш возраст</th>
+                        <th><div onclick="sortByName()" style="cursor: pointer;">Название заболевания, от которого защищает прививка</div></th>
+                        <th>Название прививки</th>
+                        <th><div onclick="sortByStatus()" style="cursor: pointer;">Статус</div></th>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr> <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr> <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                    <tr>
+                        <td class="date"> - </td>
+                        <td class="age"> - </td>
+                        <td><div class="table__block"><p class="diseas"></p></div></td>
+                        <td><div class="table__block"><p class="vaccine"></p></div></td>
+                        <td class="status"> - </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

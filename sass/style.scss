@@ -1,0 +1,33 @@
+@import "abstract/constants";
+@import "abstract/mixins";
+
+@import "base/base";
+
+@import "layouts/header";
+@import "layouts/wrapper";
+@import "layouts/layout";
+
+@import "component/navigation";
+@import "component/vaccination-calendar";
+@import "component/table";
+
+
+
+
+.status {
+
+}
+
+.logo-object {
+    //width: 73px;
+    //height: 73px;
+}
+
+
+
+
+
+
+
+
+

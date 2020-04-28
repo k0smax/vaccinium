@@ -1,0 +1,27 @@
+.navigation {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__navigation {
+    position:relative;
+    width: 1000px;
+    //background-color: #ffffff;
+    //height:100px;
+    //width:400px;
+    //padding:1em;
+    //margin:2em 10px 4em;
+}
+
+.header__navigation::after {
+    content:'';
+    background-color: $color-prim;
+    display: inline-block;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    height:6px;
+    -moz-border-radius:120px 120px 0 0 / 6px 6px 0 0;
+         border-radius:120px 120px 0 0 / 6px 6px 0 0;
+}
