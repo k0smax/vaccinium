@@ -1,10 +1,23 @@
 .table {
     display: none;
+    margin: auto;
     //transition: display 3s;
+}
+
+.table__wrapper {
+    @include media-laptop {
+        margin: auto 10px;
+    }
+}
+
+caption {
+    @include font-and-color($size: 1.6rem);
+    text-align: left;
 }
 
 .table__block {
     max-width: 375px;
+    min-width: 210px;
     height: 60px;
     margin: auto;
     border-radius: 10px;

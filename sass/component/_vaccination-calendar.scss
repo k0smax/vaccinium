@@ -1,13 +1,25 @@
+.vaccination-calendar {
+    @include media-laptop {
+        min-width: $tablet-width;
+        text-align: center;
+    }
+}
+
 .vaccination-calendar__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include media-laptop {
+        display: inline-block;
+        text-align: center;
+        padding-bottom: 60px;
+    }
 }
 
 .vaccination-calendar__description {
-    width: 845px;
+    max-width: 845px;
+    min-width: 650px;
     @include font-and-color($size: 4.8rem);
-
 }
 
 .vaccination-calendar__form {
@@ -21,11 +33,12 @@
         background-color: white;
         filter: drop-shadow(0px 3px 5px rgba(0,0,0,0.1)) drop-shadow(0px 26px 15px rgba(0,0,0,0.15)) drop-shadow(0px 28px 22.5px rgba(0,0,0,0.3));
     }
+    @include media-laptop {
+        justify-content: space-around;
+    }
 }
 
 .vaccination-calendar__button  {
-    width: 308px;
-    height: 107px;
     @include font-and-color($size: 3.6rem, $color: $color-prim);
     cursor: pointer;
     margin-left: 76px;

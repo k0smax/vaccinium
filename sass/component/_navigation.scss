@@ -5,7 +5,10 @@
 
 .header__navigation {
     position:relative;
-    width: 1000px;
+    min-width: 900px;
+    @include media-laptop {
+        display: none;
+    }
     //background-color: #ffffff;
     //height:100px;
     //width:400px;
