@@ -2,6 +2,7 @@
 @import "abstract/mixins";
 
 @import "base/base";
+@import "base/hamburger";
 
 @import "layouts/header";
 @import "layouts/wrapper";
@@ -23,47 +24,7 @@
     //height: 73px;
 }
 
-%hamburger-line {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    background-color: $color-add;
-    border-radius: 5px;
-    width: 100%;
-    height: 5px;
-}
 
-.hamburger {
-    display: none;
-    position: relative;
-    min-width: 45px;
-    height: 35px;
-    @include media-laptop {
-        display: inline-block;
-    }
-    &:before {
-        @extend %hamburger-line;
-        top: 0;
-        left: 0;
-    }
-    &:after {
-        @extend %hamburger-line;
-        bottom: 0;
-        left: 0;
-    }
-}
-
-.hamburger__line {
-    @extend %hamburger-line;
-    top: calc( 50% - 2.5px );
-    left: 0;
-}
-
-
-.header__hamburger {
-    align-self: center;
-    margin-right: 30px;
-}
 
 
 
