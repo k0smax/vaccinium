@@ -18,19 +18,19 @@
         z-index: 4;
     }
     & span {
-        transition: all 0.3s ease 0s;
+        @extend %transition;
     }
     &:before {
         @extend %hamburger-line;
+        @extend %transition;
         top: 0;
         left: 0;
-        transition: all 0.3s ease 0s;
     }
     &:after {
         @extend %hamburger-line;
+        @extend %transition;
         bottom: 0;
         left: 0;
-        transition: all 0.3s ease 0s;
     }
     &.active span{
         transform: scale(0);

@@ -15,11 +15,13 @@
         max-width: 768px;
         overflow-y: auto;
     }
+    @include media-mobile {
+        max-width: 414px;
+    }
 }
 
 caption {
     @include font-and-color($size: 2.4rem, $weight: normal);
-    text-align: left;
 }
 
 .table__block {

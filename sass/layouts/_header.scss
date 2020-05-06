@@ -15,6 +15,10 @@
 .logo {
     text-decoration: none;
     cursor: pointer;
+    @include media-mobile {
+        width: 281px;
+        height: 49px;
+    }
 }
 
 .logo__text {

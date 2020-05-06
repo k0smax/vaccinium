@@ -13,7 +13,6 @@ html {
 body {  
     margin: 0;
     @include font-and-color($size: 3.6rem);
-    max-width: 1920px;
     font-family: 'Poppins', 'Verdana', sans-serif;
 }
 
@@ -29,13 +28,13 @@ li {
 
 a {
     text-decoration: none;
-    &:visited {
+    &:visited, :link {
         color: $color-prim;
     }
 }
 
 input {
-    transition: all 0.7s;
+    @extend %transition;
     &:hover {
         box-shadow: 0 0 25px $color-prim;
     }
@@ -55,6 +54,13 @@ input[type='date'] {
     }
 }
 
+img {
+    @include media-mobile {
+        width: 281px;
+        height: 49px;
+    }
+}
+
 table {
     text-align: center;
     border-collapse: collapse;
@@ -65,9 +71,9 @@ td, th {
     @include font-and-color($size: 3.0rem, $weight: normal, $color: $color-add);
     border: 3px solid #aecad6;
     padding: 6px;
-    // @include media-laptop {
-    //     font-size: 1.6rem;
-    // }
+    @include media-mobile {
+        font-size: 1.5rem;
+    }
 }
 
 #bg {
@@ -77,5 +83,4 @@ td, th {
     left: 0;
     width: 1920px;
 }
-
 

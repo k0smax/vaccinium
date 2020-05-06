@@ -9,9 +9,7 @@
 .header__navigation {
     position:relative;
     min-width: 900px;
-    // @include media-laptop {
-    //     display: none;
-    // }
+    @extend %transition;
     @include media-laptop {
         display: block;
         min-width: 0;
@@ -27,6 +25,9 @@
         &.active {
             left: 0;
         }
+    }
+    @include media-mobile {
+        width: 70%;
     }
 
     &::after {

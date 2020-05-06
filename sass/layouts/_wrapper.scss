@@ -1,6 +1,10 @@
 .wrapper {
+    max-width: 1920px;
     margin: 50px 25px;
     @include media-laptop {
         margin: auto 50px;
+    }
+    @include media-mobile {
+        margin: auto 10px;
     }
 }
