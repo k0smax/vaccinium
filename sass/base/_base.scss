@@ -62,12 +62,12 @@ table {
 }
 
 td, th {
-    @include font-and-color($size: 2.4rem, $weight: normal, $color: $color-add);
+    @include font-and-color($size: 3.0rem, $weight: normal, $color: $color-add);
     border: 3px solid #aecad6;
     padding: 6px;
-    @include media-laptop {
-        font-size: 1.6rem;
-    }
+    // @include media-laptop {
+    //     font-size: 1.6rem;
+    // }
 }
 
 #bg {
@@ -77,3 +77,5 @@ td, th {
     left: 0;
     width: 1920px;
 }
+
+
