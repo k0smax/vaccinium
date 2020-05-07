@@ -68,6 +68,15 @@ function recordInTable(array) {
         date[i].innerHTML = array[i].dateTd;
         status[i].innerHTML = array[i].statusTd;
         age[i].innerHTML = array[i].ageTd;
+        if(screen.width < 415) {
+            if(array[i].statusTd == '<img src="img/4.svg" alt="Прививка была сделана" title="Прививка была сделана" class="logo-object">') {
+                disease[i].style.color = 'green';
+                vaccine[i].style.color = 'green';
+            } else {
+                disease[i].style.color = 'red';
+                vaccine[i].style.color = 'red';
+            }
+        }
         disease[i].innerHTML = array[i].nameDiseaseTd;
         vaccine[i].innerHTML = array[i].nameVaccineTd;
     }
